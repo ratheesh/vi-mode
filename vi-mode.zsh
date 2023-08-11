@@ -69,7 +69,7 @@ function select_cursor() {
     # Block cursor in normal and visual mode
     vicmd) echo -ne "\e[2 q";;
     # Line cursor in insert mode
-    main|viins) echo -ne "\e[5 q";;
+    main|viins) echo -ne "\e[2 q";;
     # Else Block cursor
     *) echo -ne "\e[2 q";;
   esac
